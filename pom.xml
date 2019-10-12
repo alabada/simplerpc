@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.wenzhd.parent</groupId>
+        <artifactId>wenzhd-parent-springboot</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.wenzhd.rpc</groupId>
+    <artifactId>simprpc</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>simprpc</name>
+
+    <properties>
+        <project.version>1.0-SNAPSHOT</project.version>
+    </properties>
+
+    <modules>
+        <module>rpc-api</module>
+        <module>rpc-server</module>
+        <module>rpc-client</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.wenzhd.rpc</groupId>
+                <artifactId>rpc-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
