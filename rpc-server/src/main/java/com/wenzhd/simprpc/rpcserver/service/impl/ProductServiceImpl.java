@@ -19,7 +19,7 @@ public class ProductServiceImpl implements ProductService {
         Product product = new Product();
         product.setId(123L);
         product.setName("wenzhd");
-        product.setPrice(new BigDecimal(66.662).setScale(2, BigDecimal.ROUND_HALF_UP));
+        product.setPrice(new BigDecimal(66.667).setScale(2, BigDecimal.ROUND_HALF_UP));
 
         return product;
     }
